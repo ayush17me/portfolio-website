@@ -10,7 +10,7 @@ export default function Footer() {
         </p>
         <div className="flex gap-6 md:gap-8">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ayush-mishra-117435324"
             target="_blank"
             rel="noopener noreferrer"
             className="font-label text-xs uppercase tracking-widest text-outline hover:text-primary transition-all duration-300"
@@ -18,7 +18,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/ayush17me"
             target="_blank"
             rel="noopener noreferrer"
             className="font-label text-xs uppercase tracking-widest text-outline hover:text-primary transition-all duration-300"

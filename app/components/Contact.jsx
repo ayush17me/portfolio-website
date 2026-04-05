@@ -57,7 +57,7 @@ export default function Contact() {
         </div>
         <div className="flex justify-center gap-8 md:gap-12 pt-8 md:pt-12 reveal">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ayush-mishra-117435324"
             target="_blank"
             rel="noopener noreferrer"
             id="linkedin-link"
@@ -67,7 +67,7 @@ export default function Contact() {
             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/ayush17me"
             target="_blank"
             rel="noopener noreferrer"
             id="github-link"

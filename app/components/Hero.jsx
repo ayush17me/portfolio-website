@@ -89,7 +89,7 @@ export default function Hero() {
         >
           <div className="aspect-[4/5] rounded-2xl overflow-hidden rotate-2 hover:rotate-0 transition-transform duration-700 ease-expo custom-shadow">
             <Image
-              src="/ayush.png"
+              src="/ayush-profile.png"
               alt="Ayush Mishra - Portrait"
               width={640}
               height={800}
