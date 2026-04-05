@@ -59,7 +59,7 @@ export default function Education() {
       className="bg-surface-container-low py-16 md:py-20 px-6 md:px-8"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-12 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-12 gap-8">
           <div className="max-w-2xl reveal">
             <span className="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">
               Academic Path

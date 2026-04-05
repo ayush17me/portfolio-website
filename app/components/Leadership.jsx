@@ -31,8 +31,8 @@ export default function Leadership() {
               <span className="font-label text-xs uppercase tracking-widest text-outline font-bold">
                 Leadership &amp; Impact
               </span>
-              <span className="font-label text-xs uppercase tracking-[0.2em] font-bold text-outline">
-                AUG 2024 — PRESENT
+              <span className="font-label text-xs uppercase tracking-[0.2em] font-bold text-outline whitespace-nowrap text-right">
+                AUG 2024 - PRESENT
               </span>
             </div>
             <h3 className="font-headline text-3xl md:text-4xl leading-tight font-bold text-on-surface">
