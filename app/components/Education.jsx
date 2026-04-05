@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const educationData = [
   {
-    period: "AUG 2024 — MAY 2028",
+    period: "AUG 2024 - MAY 2028\u00A0(Expected)",
     institution:
       "Indian Institute of Engineering Science and Technology, Shibpur",
     degree: "B.Tech in Information Technology",
@@ -15,7 +15,7 @@ const educationData = [
     featured: true,
   },
   {
-    period: "JULY 2022",
+    period: "",
     institution: "Sri Krishna Children Central Academy",
     degree: "Senior Secondary (Class XII), CBSE",
     score: "Percentage: 84.2%",
@@ -23,7 +23,7 @@ const educationData = [
     featured: false,
   },
   {
-    period: "JULY 2020",
+    period: "",
     institution: "Radiant Central Academy",
     degree: "Secondary Education (Class X), CBSE",
     score: "Percentage: 94.0%",
@@ -74,37 +74,33 @@ export default function Education() {
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className={`reveal grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 group ${
-                !edu.featured ? "opacity-80" : ""
-              } ${
-                index > 0
+              className={`reveal grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 group ${!edu.featured ? "opacity-80" : ""
+                } ${index > 0
                   ? "border-t border-outline-variant/10 pt-12 md:pt-16"
                   : ""
-              }`}
+                }`}
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               <div className="md:col-span-3">
-                <span className="font-label text-sm text-outline uppercase tracking-wider">
+                <span className="font-label text-sm text-outline uppercase tracking-wider whitespace-nowrap">
                   {edu.period}
                 </span>
               </div>
               <div className="md:col-span-9 space-y-3">
                 <h3
-                  className={`font-headline ${
-                    edu.featured
-                      ? "text-2xl md:text-3xl italic"
-                      : "text-xl md:text-2xl"
-                  }`}
+                  className={`font-headline ${edu.featured
+                    ? "text-2xl md:text-3xl italic"
+                    : "text-xl md:text-2xl"
+                    }`}
                 >
                   {edu.institution}
                 </h3>
                 <div className="flex flex-wrap gap-x-6 items-center">
                   <p
-                    className={`${
-                      edu.featured
-                        ? "text-on-surface font-semibold"
-                        : "text-on-surface-variant"
-                    }`}
+                    className={`${edu.featured
+                      ? "text-on-surface font-semibold"
+                      : "text-on-surface-variant"
+                      }`}
                   >
                     {edu.degree}
                   </p>
