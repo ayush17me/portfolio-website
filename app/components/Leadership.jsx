@@ -23,9 +23,9 @@ export default function Leadership() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 px-6 md:px-8 bg-surface overflow-hidden">
+    <section ref={sectionRef} className="pt-8 md:pt-10 pb-10 md:pb-12 px-6 md:px-8 bg-surface overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center bg-surface-container-low text-on-surface rounded-2xl p-8 md:p-12 ambient-shadow ghost-border">
+        <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center bg-surface-container-low text-on-surface rounded-2xl p-6 md:p-8 ambient-shadow ghost-border">
           <div className="space-y-6">
             <div className="flex justify-between items-center w-full">
               <span className="font-label text-xs uppercase tracking-widest text-outline font-bold">

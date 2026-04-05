@@ -26,7 +26,7 @@ export default function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="py-28 md:py-40 px-6 md:px-8 text-center bg-surface"
+      className="pt-12 md:pt-16 pb-20 md:pb-24 px-6 md:px-8 text-center bg-surface"
     >
       <div className="max-w-3xl mx-auto space-y-10 md:space-y-12">
         <span className="font-label text-xs uppercase tracking-[0.4em] text-primary reveal inline-block">

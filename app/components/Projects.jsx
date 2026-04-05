@@ -27,9 +27,9 @@ export default function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="py-24 md:py-32 px-6 md:px-8 max-w-7xl mx-auto"
+      className="pt-16 md:pt-20 pb-8 md:pb-10 px-6 md:px-8 max-w-7xl mx-auto"
     >
-      <div className="mb-16 md:mb-20 reveal">
+      <div className="mb-10 md:mb-12 reveal">
         <span className="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">
           Research &amp; Academic Work
         </span>

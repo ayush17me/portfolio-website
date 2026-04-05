@@ -27,9 +27,9 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="min-h-screen flex flex-col justify-center px-6 md:px-8 max-w-7xl mx-auto py-24 pt-32"
+      className="flex flex-col px-6 md:px-8 max-w-7xl mx-auto pt-24 lg:pt-28 pb-12 lg:pb-16"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-start">
         {/* Left Content */}
         <div className="lg:col-span-7 space-y-8">
           <div className="space-y-5">

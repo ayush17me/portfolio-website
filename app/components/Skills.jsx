@@ -36,15 +36,15 @@ export default function Skills() {
     <section
       ref={sectionRef}
       id="skills"
-      className="py-24 md:py-32 px-6 md:px-8 bg-surface-container-lowest"
+      className="pt-10 md:pt-12 pb-10 md:pb-12 px-6 md:px-8 bg-surface-container-lowest"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Left: Programming + Data Science */}
         <div className="reveal">
           <span className="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">
             Technical Stack
           </span>
-          <h2 className="font-headline text-4xl md:text-5xl font-medium tracking-tight mb-10 md:mb-12">
+          <h2 className="font-headline text-4xl md:text-5xl font-medium tracking-tight mb-8">
             Building blocks of my craft
           </h2>
           <div className="space-y-10 md:space-y-12">

@@ -56,10 +56,10 @@ export default function Education() {
     <section
       ref={sectionRef}
       id="education"
-      className="bg-surface-container-low py-24 md:py-32 px-6 md:px-8"
+      className="bg-surface-container-low py-16 md:py-20 px-6 md:px-8"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-12 gap-8">
           <div className="max-w-2xl reveal">
             <span className="font-label text-xs uppercase tracking-widest text-secondary mb-4 block">
               Academic Path
@@ -70,13 +70,13 @@ export default function Education() {
           </div>
         </div>
 
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-8 md:space-y-10">
           {educationData.map((edu, index) => (
             <div
               key={index}
               className={`reveal grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 group ${!edu.featured ? "opacity-80" : ""
                 } ${index > 0
-                  ? "border-t border-outline-variant/10 pt-12 md:pt-16"
+                  ? "border-t border-outline-variant/10 pt-8 md:pt-10"
                   : ""
                 }`}
               style={{ transitionDelay: `${index * 0.1}s` }}
