@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,7 +37,7 @@ export default function Navbar() {
           AYUSH MISHRA
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation & Theme Toggle */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
@@ -48,19 +49,24 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <div className="w-px h-6 bg-outline-variant/30 hidden md:block"></div>
+          <ThemeToggle />
         </div>
 
-        {/* Mobile Hamburger */}
-        <button
-          id="mobile-menu-toggle"
-          className="md:hidden p-2 rounded-xl hover:bg-surface-container transition-colors"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className="material-symbols-outlined text-on-surface text-2xl">
-            {mobileOpen ? "close" : "menu"}
-          </span>
-        </button>
+        {/* Mobile controls */}
+        <div className="md:hidden flex items-center gap-3">
+          <ThemeToggle />
+          <button
+            id="mobile-menu-toggle"
+            className="p-2 rounded-xl hover:bg-surface-container transition-colors"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className="material-symbols-outlined text-on-surface text-2xl">
+              {mobileOpen ? "close" : "menu"}
+            </span>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}

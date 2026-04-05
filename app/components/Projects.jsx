@@ -84,25 +84,25 @@ export default function Projects() {
         </div>
 
         {/* Future Research — Dark Card */}
-        <div className="bg-gradient-to-br from-sky-100 to-sky-200 text-sky-900 rounded-2xl p-8 md:p-10 flex flex-col justify-between group reveal">
+        <div className="bg-gradient-to-br from-sky-100 to-sky-200 dark:from-sky-900/40 dark:to-sky-800/20 text-sky-900 dark:text-sky-100 rounded-2xl p-8 md:p-10 flex flex-col justify-between text-left group reveal border-2 border-transparent dark:border-sky-800/30">
           <div className="space-y-6">
-            <span className="material-symbols-outlined text-5xl text-sky-700">
+            <span className="material-symbols-outlined text-5xl text-sky-700 dark:text-sky-400">
               neurology
             </span>
-            <h3 className="font-headline text-2xl md:text-3xl leading-tight">
+            <h3 className="font-headline text-xl md:text-2xl leading-tight whitespace-nowrap">
               Future Research Interests
             </h3>
-            <p className="font-label text-sm text-sky-800 leading-relaxed uppercase tracking-widest">
+            <p className="font-label text-sm text-sky-800 dark:text-sky-300 leading-relaxed uppercase tracking-widest">
               Machine Learning &amp; Deep Learning
             </p>
-            <p className="text-sky-950">
+            <p className="text-sky-950 dark:text-sky-200">
               To Solve real world challenges using the help of AI
             </p>
           </div>
           <div className="pt-8">
             <a
               href="#contact"
-              className="font-label text-xs font-bold underline decoration-sky-700 underline-offset-8 uppercase tracking-widest text-sky-900 hover:text-sky-700 transition-colors duration-300"
+              className="font-label text-xs font-bold underline decoration-sky-700 dark:decoration-sky-400 underline-offset-8 uppercase tracking-widest text-sky-900 dark:text-sky-100 hover:text-sky-700 dark:hover:text-sky-300 transition-colors duration-300"
             >
               Inquire for Collaboration
             </a>

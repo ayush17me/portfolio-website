@@ -50,14 +50,28 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${newsreader.variable} ${plusJakartaSans.variable} ${spaceGrotesk.variable}`}
+      suppressHydrationWarning
     >
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (_) {}
+            `,
+          }}
+        />
       </head>
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen transition-colors duration-300">{children}</body>
     </html>
   );
 }
