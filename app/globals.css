@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* ─── Primary Color Scale ─── */
+  --color-primary: #81443e;
+  --color-primary-container: #9e5c55;
+  --color-primary-fixed: #ffdad6;
+  --color-primary-fixed-dim: #ffb4ab;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #ffeeec;
+  --color-on-primary-fixed: #380c09;
+  --color-on-primary-fixed-variant: #6f3630;
+
+  /* ─── Secondary Color Scale ─── */
+  --color-secondary: #755753;
+  --color-secondary-container: #ffd6d1;
+  --color-secondary-fixed: #ffdad5;
+  --color-secondary-fixed-dim: #e5bdb8;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #7a5b57;
+  --color-on-secondary-fixed: #2b1613;
+  --color-on-secondary-fixed-variant: #5c403c;
+
+  /* ─── Tertiary Color Scale ─── */
+  --color-tertiary: #744e00;
+  --color-tertiary-container: #946500;
+  --color-tertiary-fixed: #ffddaf;
+  --color-tertiary-fixed-dim: #fdba49;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fff0de;
+  --color-on-tertiary-fixed: #281800;
+  --color-on-tertiary-fixed-variant: #614000;
+
+  /* ─── Surface & Background ─── */
+  --color-surface: #fff8f4;
+  --color-surface-bright: #fff8f4;
+  --color-surface-dim: #e0d9d4;
+  --color-surface-container: #f4ece7;
+  --color-surface-container-low: #faf2ed;
+  --color-surface-container-high: #efe7e2;
+  --color-surface-container-highest: #e9e1dc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-tint: #8b4d46;
+  --color-surface-variant: #e9e1dc;
+  --color-background: #fff8f4;
+  --color-on-background: #1e1b18;
+  --color-on-surface: #1e1b18;
+  --color-on-surface-variant: #534341;
+
+  /* ─── Error ─── */
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  /* ─── Outline ─── */
+  --color-outline: #857371;
+  --color-outline-variant: #d8c2bf;
+
+  /* ─── Inverse ─── */
+  --color-inverse-surface: #33302d;
+  --color-inverse-on-surface: #f7efea;
+  --color-inverse-primary: #ffb4ab;
+
+  /* ─── Typography ─── */
+  --font-headline: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-label: "Space Grotesk", "SF Mono", monospace;
+
+  /* ─── Border Radius ─── */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+}
+
+/* ─── Base Styles ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+}
+
+/* ─── Custom Utilities ─── */
+.signature-gradient {
+  background: linear-gradient(135deg, #81443e 0%, #9e5c55 100%);
+}
+
+.ghost-border {
+  border: 1px solid rgba(216, 194, 191, 0.2);
+}
+
+.custom-shadow {
+  box-shadow: 0 12px 40px rgba(30, 27, 24, 0.06);
+}
+
+.ambient-shadow {
+  box-shadow: 0 12px 40px rgba(30, 27, 24, 0.06);
+}
+
+/* ─── Expo Out Easing ─── */
+.ease-expo {
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ─── Glass Morphism ─── */
+.glass {
+  background: rgba(255, 248, 244, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ─── Animations ─── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(-3deg); }
+  50% { transform: translateY(-8px) rotate(-3deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.animate-slide-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.animate-slide-right {
+  animation: slideInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+.delay-600 { animation-delay: 0.6s; }
+
+/* ─── Scroll-driven Reveal ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Custom Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-low);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-outline-variant);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-outline);
+}
