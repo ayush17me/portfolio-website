@@ -35,7 +35,7 @@ export default function Contact() {
         <h2 className="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tighter reveal">
           Let&apos;s build something{" "}
           <span className="italic underline decoration-outline-variant/30 underline-offset-[12px]">
-            extraordinary
+            together
           </span>
           .
         </h2>
