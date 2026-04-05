@@ -83,26 +83,26 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* Future Research — Sky Blue Highlight Card */}
-        <div className="bg-gradient-to-br from-sky-100 to-sky-200 text-sky-950 rounded-2xl p-8 md:p-10 flex flex-col justify-between text-left group reveal border-2 border-transparent">
+        {/* Future Research — Sky Blue Highlight Card (Adapts in Dark Mode) */}
+        <div className="future-research-card rounded-2xl p-8 md:p-10 flex flex-col justify-between text-left group reveal border-2 border-transparent">
           <div className="space-y-6">
-            <span className="material-symbols-outlined text-5xl text-sky-700">
+            <span className="material-symbols-outlined text-5xl fr-icon">
               neurology
             </span>
             <h3 className="font-headline text-xl md:text-2xl leading-tight whitespace-nowrap">
               Future Research Interests
             </h3>
-            <p className="font-label text-sm text-sky-800 leading-relaxed uppercase tracking-widest">
+            <p className="font-label text-sm leading-relaxed uppercase tracking-widest fr-label">
               Machine Learning &amp; Deep Learning
             </p>
-            <p className="text-sky-950/90 font-medium">
+            <p className="font-medium fr-text">
               To Solve real world challenges using the help of AI
             </p>
           </div>
           <div className="pt-8">
             <a
               href="#contact"
-              className="font-label text-xs font-bold underline decoration-sky-700/50 hover:decoration-sky-700 underline-offset-8 uppercase tracking-widest text-sky-900 transition-colors duration-300"
+              className="font-label text-xs font-bold underline underline-offset-8 uppercase tracking-widest fr-link"
             >
               Inquire for Collaboration
             </a>

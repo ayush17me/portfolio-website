@@ -235,6 +235,27 @@ body {
   transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+/* ─── Future Research Card ─── */
+.future-research-card {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); /* from-sky-100 to-sky-200 */
+  color: #082f49; /* text-sky-950 */
+}
+.future-research-card .fr-icon { color: #0369a1; } /* text-sky-700 */
+.future-research-card .fr-label { color: #075985; } /* text-sky-800 */
+.future-research-card .fr-text { color: rgba(8, 47, 73, 0.9); }
+.future-research-card .fr-link { color: #0c4a6e; text-decoration-color: rgba(3, 105, 161, 0.5); transition: all 0.3s ease; }
+.future-research-card .fr-link:hover { text-decoration-color: #0369a1; }
+
+.dark .future-research-card {
+  background: var(--color-surface-container);
+  color: var(--color-on-surface);
+}
+.dark .future-research-card .fr-icon { color: var(--color-primary); }
+.dark .future-research-card .fr-label { color: var(--color-on-surface-variant); }
+.dark .future-research-card .fr-text { color: var(--color-on-surface); }
+.dark .future-research-card .fr-link { color: var(--color-primary); text-decoration-color: var(--color-outline-variant); }
+.dark .future-research-card .fr-link:hover { text-decoration-color: var(--color-primary); }
+
 /* ─── Glass Morphism ─── */
 .glass {
   background: rgba(255, 248, 244, 0.7);
