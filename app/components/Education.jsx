@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 
 const educationData = [
   {
-    period: "AUG 2024 - MAY 2028\u00A0(Expected)",
+    period: "AUG 2024 - MAY 2028",
     institution:
       "Indian Institute of Engineering Science and Technology, Shibpur",
     degree: "B.Tech in Information Technology",
